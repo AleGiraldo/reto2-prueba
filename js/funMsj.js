@@ -1,6 +1,6 @@
 function consulta() {
     $.ajax({
-        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message/",
+        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message",
         type:"GET",
         datatype:"JSON",
         success:function(response){
@@ -32,7 +32,7 @@ function guardarInfo(){
     };
     console.log(datos);
     $.ajax({
-        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message/",
+        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message",
         data:datos,
         type:"POST",
         datatype:"json",
@@ -50,7 +50,7 @@ function borrar(idElemento){
     let datoEnvio = JSON.stringify(elemento);
     console.log(datoEnvio);
     $.ajax({
-        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message/",
+        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message",
         type:"DELETE",
         data:datoEnvio,
         datatype:"json",
@@ -85,7 +85,7 @@ function editar(){
     let datosEnvio = JSON.stringify(datos)
     console.log(datosEnvio);
     $.ajax({
-        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message/",
+        url:"https://g468ced4b1f31f1-dbhotel.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/message/message",
         data:datosEnvio,
         contentType:'application/json',
         type:"PUT",
